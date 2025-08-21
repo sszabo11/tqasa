@@ -32,6 +32,7 @@
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
+		"@vercel/analytics": "^1.5.0",
 		"airnotice-svelte": "^1.2.33",
 		"moment": "^2.30.1"
 	}
