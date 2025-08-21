@@ -6,6 +6,10 @@
 	let { data } = $props();
 </script>
 
+<svelte:head>
+	<title>Thoughts, questions and some answers</title>
+	<meta name="description" content="A blog to write and comment about things." />
+</svelte:head>
 <div class="container">
 	<div class="main">
 		<h1>thoughts, questions and some answers</h1>
