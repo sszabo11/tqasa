@@ -1,7 +1,7 @@
 import type { Article } from '$lib/types';
 import type { PageServerLoad } from './$types';
 
-export const articles: Article[] = [
+const articles: Article[] = [
   {
     id: '1',
     title: 'How Small Can a Wave Get?',
