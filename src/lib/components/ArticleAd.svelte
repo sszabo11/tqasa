@@ -4,7 +4,7 @@
 
 <div class="article">
 	<span>Advertisment</span>
-	<Ad />
+	<Ad fill="width" />
 </div>
 
 <style>
