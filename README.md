@@ -1,38 +1,43 @@
-# sv
+# Thoughts, questions and some answers
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A blog to ponder things.
 
-## Creating a project
+## Under construction
 
-If you're seeing this, you've probably already done this step. Congrats!
+I am currently building it
 
-```sh
-# create a new project in the current directory
-npx sv create
+## Also a demo for AirNotice
+I have also built AirNotice, the platform that connects brands seeking to advertise with sites wanting to earn. Were an indpendent ad network that is striving to make ads easy for everyone. Also in development. Launching this month! Visit [airnotice.co](https://airnotice.co) for info on that.
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+For sites (publishers) you can easily intergrate ads via a component.
 
 ```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# install sdk
+npm install airnotice-svelte
 ```
 
-## Building
+## AirNotice usage
 
-To create a production version of your app:
+Once you've installed your framework library, AirNotice enables you to do **rapid prototyping** where you can place ads, that auto save on the dashboard, saving you time.
 
-```sh
-npm run build
+```svelte
+
+<!-- Place single ad -->
+<Ad name="header" />
+
+
+<!-- Place group ad (e.g. Show ad every 5 articles)-->
+<div class="recent">
+	<Group name="recent">
+        {#each data.articles as article, i}
+			{#if i !== 0 && i % 4 === 0}
+				<ArticleAd />
+			{/if}
+			<div class="article">
+				<Article {article} />
+			</div>
+		{/each}
+	</Group>
+</div>
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+See ([`ArticleAd.svelte`](https://github.com/sszabo11/tqasa/blob/main/src/routes/%2Bpage.svelte)) for group usage
