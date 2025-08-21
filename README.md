@@ -1,11 +1,13 @@
 # Thoughts, questions and some answers
-
 A blog to ponder things. 
 In the beginning, it will just be me writing, however I hope that it will become a place for anyone to write about their thoughts, questions or answers.
 
-## Under construction
+## 🚩 Status
+Under development. I am currently building it.
 
-I am currently building it.
+
+
+
 
 ## Also a demo for AirNotice
 I have also built AirNotice, the platform that connects brands seeking to advertise with sites wanting to earn. AirNotice is an indpendent ad network that is striving to make ads easy for everyone. Its Also in development. Launching this month! Visit [airnotice.co](https://airnotice.co) for info on that.
