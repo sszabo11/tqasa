@@ -12,6 +12,9 @@
 	<meta name="description" content="A blog to write and comment about things." />
 </svelte:head>
 <div class="container">
+	<a class="goal" href="/goal">Goal</a>
+
+	<a class="about" href="/about">About</a>
 	<div class="main">
 		<h1>Thoughts, questions and some answers</h1>
 		<p>A collection of ideas.</p>
@@ -77,5 +80,20 @@
 		align-items: center;
 		gap: 2px;
 		color: var(--light-grey);
+	}
+
+	.about {
+		right: 30px;
+		top: 30px;
+	}
+	.goal {
+		left: 30px;
+		top: 30px;
+	}
+	a {
+		position: absolute;
+		color: var(--color);
+		font-size: 18px;
+		z-index: 999;
 	}
 </style>

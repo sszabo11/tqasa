@@ -9,7 +9,9 @@
 
 <div class="app">
 	<header>
-		<Logo />
+		<a href="/" class="logo">
+			<Logo />
+		</a>
 	</header>
 	<div class="content">
 		{@render children?.()}
@@ -30,8 +32,10 @@
 	header {
 		width: 100%;
 		display: flex;
+		padding: 0 30px;
+		box-sizing: border-box;
 		position: absolute;
-		top: 20px;
+		top: 30px;
 		align-items: center;
 		justify-content: center;
 	}
