@@ -13,22 +13,24 @@
 	<div class="img">
 		<img src={article.thumbnail} alt={article.title} />
 	</div>
-	<h3>{article.title}</h3>
-	<p>{article.description}</p>
-	<span>{moment(article.created_at).format('MMMM Do YYYY')}</span>
+	<div class="about">
+		<h3>{article.title}</h3>
+		<span>{moment(article.created_at).format('MMMM Do YYYY')}</span>
+		<p>{article.description}</p>
+	</div>
 </article>
 
 <style>
 	.article {
 		padding: 20px 26px;
 		box-sizing: border-box;
-		border: 1px solid #e2e2e2;
+		border: var(--card-border);
 		width: fit-content;
 		width: 100%;
-		display: flex;
+		display: grid;
+		gap: 50px;
+		grid-template-columns: 1fr 2fr;
 		height: 100%;
-		flex-direction: column;
-		gap: 10px;
 	}
 
 	.img {
@@ -40,14 +42,24 @@
 	}
 
 	h3 {
-		font-size: 20px;
+		font-size: 36px;
+		font-weight: 600;
 		margin: 0;
+		margin-bottom: 20px;
+	}
+
+	span {
+		margin-bottom: 20px;
 	}
 
 	p,
 	span {
-		font-size: 16px;
-		color: #b5b5b5;
-		margin: 0;
+		font-size: 18px;
+		color: var(--label);
+	}
+
+	.about {
+		padding: 10px 0;
+		width: 100%;
 	}
 </style>

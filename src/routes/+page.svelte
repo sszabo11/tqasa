@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Article from '$lib/components/Article.svelte';
 	import ArticleAd from '$lib/components/ArticleAd.svelte';
+	import RabbitIcon from '$lib/icons/RabbitIcon.svelte';
 	import { Group } from 'airnotice-svelte';
 
 	let { data } = $props();
@@ -12,8 +13,13 @@
 </svelte:head>
 <div class="container">
 	<div class="main">
-		<h1>thoughts, questions and some answers</h1>
-		<p>A blog to ponder on things</p>
+		<h1>Thoughts, questions and some answers</h1>
+		<p>A collection of ideas.</p>
+		<div class="by">
+			<span>By</span>
+			<RabbitIcon />
+			<span>Rabbit Muncher</span>
+		</div>
 	</div>
 	<div class="recent">
 		<Group name="recent">
@@ -35,33 +41,41 @@
 	}
 
 	.main {
+		position: relative;
 		width: 100%;
 		height: 50vh;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background: linear-gradient(180deg, #ffd09a -29.95%, #ffffff 100%);
 	}
 
 	.recent {
 		padding: 30px;
 		box-sizing: border-box;
 		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		display: flex;
+		flex-direction: column;
 		gap: 2.5rem;
 		justify-items: center;
 	}
 
 	.main h1 {
-		font-size: 50px;
+		font-size: 3.7vw;
 		font-weight: 500;
-		font-style: italic;
 	}
 
 	.main p {
-		font-size: 18px;
+		font-size: 20px;
 		font-style: italic;
+	}
+
+	.by {
+		position: absolute;
+		bottom: 100px;
+		display: flex;
+		align-items: center;
+		gap: 2px;
+		color: var(--light-grey);
 	}
 </style>

@@ -35,4 +35,15 @@
 		align-items: center;
 		justify-content: center;
 	}
+
+	:root {
+		--bg: light-dark(#ffffff, #0c0c0c);
+		--color: light-dark(#000000, #ffffff);
+		--label: light-dark(#b5b5b5, #747474);
+		--light-grey: light-dark(#b8b8b8, #464646);
+		--blue: light-dark(#002aff, #526fff);
+		--purple: light-dark(#3700ff, #7d59ff);
+		--card-border-color: light-dark(#e2e2e2, #454545);
+		--card-border: 1px solid var(--card-border-color);
+	}
 </style>

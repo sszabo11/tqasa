@@ -8,24 +8,34 @@ const articles: Article[] = [
     description: 'Exploring the limits of wave physics, from ocean swells to quantum fluctuations.',
     author: 'Dr. Lena Hart',
     created_at: '2025-08-21T10:00:00Z',
-    thumbnail: '/wave.png'
+    thumbnail: '/images/waves.svg'
   },
   {
     id: '2',
-    title: 'Determinism: Is Everything Already Decided?',
-    description: 'A deep dive into the philosophy of determinism and its clash with free will.',
+    title: 'Can we predict the future and past?',
+    description:
+      'If everyone came from  a starting point in time (the big bang), and (if) we had the position and velocity of the initial particles in the universe, then (if) we had the computation power, we could calculate the rest of the universe? We’ll discuss the limits to this theory and how it’s actually (nearly) viable. Does anyone actually have free will?',
     author: 'Marcus Reed',
     created_at: '2025-08-20T15:30:00Z',
-    thumbnail: '/deter.png'
+    thumbnail: '/images/determi.svg'
   },
   {
     id: '3',
-    title: 'Air-Breathing Ion Engines: Future of Space Travel',
+    title: 'Engines that accelerate particles?',
     description:
-      'How air-breathing ion engines could revolutionize propulsion and space exploration.',
+      'Let’s discuss ion propulsion, and why its so powerful yet so weak. Why isn’t it being used more in space travel, let alone air travel?',
     author: 'Elena Zhou',
     created_at: '2025-08-19T09:45:00Z',
-    thumbnail: '/ion.png'
+    thumbnail: '/images/ion.svg'
+  },
+  {
+    id: '7',
+    title: 'Where are the aliens?',
+    description:
+      'Humans have only had radio astronomy for 100 years, cameras for only 150 years, science for only 2500 years, so its obvious that we haven’t seen them, right? Well, in this article I will discuss my thoughts on aliens, and humans presence in the cosmos.',
+    author: 'Samir Patel',
+    created_at: '2025-08-18T18:20:00Z',
+    thumbnail: '/images/alien.svg'
   },
   {
     id: '4',

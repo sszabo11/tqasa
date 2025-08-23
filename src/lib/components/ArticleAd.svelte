@@ -4,7 +4,9 @@
 
 <div class="article">
 	<span>Advertisment</span>
-	<Ad fill="width" />
+	<div class="ad">
+		<Ad fill="width" />
+	</div>
 </div>
 
 <style>
@@ -17,11 +19,16 @@
 		display: flex;
 		height: 100%;
 		flex-direction: column;
-		gap: 10px;
+		gap: 20px;
 	}
 
 	span {
 		font-size: 16px;
 		color: #b5b5b5;
+	}
+
+	.ad {
+		width: 100%;
+		height: 300px;
 	}
 </style>
