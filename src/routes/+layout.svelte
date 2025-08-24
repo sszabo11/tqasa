@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
 	import { env } from '$env/dynamic/public';
 	import Logo from '$lib/components/Logo.svelte';
 	import { initAirNotice } from 'airnotice-svelte';
@@ -7,6 +8,15 @@
 	initAirNotice({ apiKey: env.PUBLIC_AIRNOTICE_KEY, autoSave: true, showUnitStatus: true });
 </script>
 
+<svelte:head>
+	<script
+		data-api-key="site_dev_8efb6f6363ca4bcf88647e71dc6be7d9"
+		src={dev
+			? 'http://127.0.0.1:8080/dist/index.min.js'
+			: 'https://ad-unit-cdn.s3.us-east-1.amazonaws.com/place.js'}
+		id="ads-cdn"
+	></script>
+</svelte:head>
 <div class="app">
 	<header>
 		<a href="/" class="logo">
