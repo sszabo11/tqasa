@@ -10,9 +10,9 @@
 
 <svelte:head>
 	<script
-		data-api-key="site_dev_8efb6f6363ca4bcf88647e71dc6be7d9"
+		data-api-key="site_prod_eede8f46672f4737ba7a9e4104012b38"
 		src={dev
-			? 'http://127.0.0.1:8080/dist/index.min.js'
+			? 'http://127.0.0.1:51898/dist/index.min.js'
 			: 'https://ad-unit-cdn.s3.us-east-1.amazonaws.com/place.js'}
 		id="ads-cdn"
 	></script>
