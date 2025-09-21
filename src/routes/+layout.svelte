@@ -16,6 +16,8 @@
 			: 'https://ad-unit-cdn.s3.us-east-1.amazonaws.com/place.js'}
 		id="ads-cdn"
 	></script>
+	<script src="https://media.airnotice.co/events/index.js" id="airnotice-events">
+	</script>
 </svelte:head>
 <div class="app">
 	<header>
