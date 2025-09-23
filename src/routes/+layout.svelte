@@ -17,7 +17,7 @@
 		id="ads-cdn"
 	></script>
 	<script
-		src="https://media.airnotice.co/events/index.js"
+		src={`https://media.airnotice.co/events/index.js?meow=${performance.now()}`}
 		id="airnotice-events"
 		data-key="13965b5a-38e8-4dd6-b349-0cf88ea4e693"
 	>
