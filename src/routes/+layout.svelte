@@ -14,7 +14,7 @@
 		src={dev
 			? 'http://127.0.0.1:51898/dist/index.min.js'
 			: 'https://media.airnotice.co/place/index.js'}
-		id="ads-cdn"
+		id="airnotice-place"
 	></script>
 	<script
 		src={`https://media.airnotice.co/events/index.js?meow=${performance.now()}`}
