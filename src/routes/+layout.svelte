@@ -10,10 +10,10 @@
 
 <svelte:head>
 	<script
-		data-api-key="site_prod_eede8f46672f4737ba7a9e4104012b38"
+		data-api-key="ef86a974-fd60-455e-94bf-be6f29dec07b"
 		src={dev
 			? 'http://127.0.0.1:51898/dist/index.min.js'
-			: 'https://ad-unit-cdn.s3.us-east-1.amazonaws.com/place.js'}
+			: 'https://media.airnotice.co/place/index.js'}
 		id="ads-cdn"
 	></script>
 	<script
